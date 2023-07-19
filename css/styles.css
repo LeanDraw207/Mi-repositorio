@@ -40,10 +40,13 @@ margin: 0 10px;
 color: #865DFF;
 text-decoration: none;
 font-size: 18px;
-
 }
 
-/* Estilos para el contenido principal */
+.navegacion ul li a:hover{
+    color: #E384FF;
+}
+
+/* Main inicio */
 .presentacion {
     margin: 50px auto;
     text-align: center;
@@ -60,19 +63,6 @@ font-size: 18px;
     line-height: 1.5;
 }
 
-/* Estilos para el pie de página */
-footer {
-    background-color: #191825;
-    color: #865DFF;
-    padding: 10px;
-    text-align: center;
-}
-
-.redes {
-width: 50px;
-height: 50px;
-margin: 10px;
-}
 
                     /*COMENTA*/
 
@@ -234,6 +224,11 @@ button[type="submit"]:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.beck:hover{
+    width: 250px;
+    box-shadow: 0px 0px 15px  darkgrey ;
+}
+
 .Amber {
     width: 200px;
     display: block;
@@ -243,6 +238,11 @@ button[type="submit"]:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.Amber:hover {
+    width: 250px;
+    box-shadow: 0px 0px 15px  darkgrey ;
+}
+
 .Gaco {
     width: 250px;
     display: block;
@@ -250,4 +250,23 @@ button[type="submit"]:hover {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Gaco:hover {
+    width: 300px;
+    box-shadow: 0px 0px 15px  darkgrey ;
+}
+/* FOOTER */
+
+footer {
+    background-color: #191825;
+    color: #865DFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.redes {
+width: 50px;
+height: 50px;
+margin: 10px;
 }
