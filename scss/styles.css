@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*reset*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
@@ -24,8 +23,7 @@ header {
   padding: 10px;
   grid-template-areas: "inicio" "nav";
 }
-
-.Inicio {
+header .Inicio {
   color: #865DFF;
   display: inline-block;
   text-decoration: none;
@@ -33,38 +31,32 @@ header {
   font-weight: bold;
   justify-items: center;
 }
-
-.encabezado {
+header .encabezado {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.Inicio {
+header .Inicio {
   align-self: center;
 }
-
-.navegacion {
+header .navegacion {
   margin-top: 10px;
   text-align: center;
 }
-
-.navegacion ul {
+header ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
-.navegacion ul li a {
+header ul li a {
   margin: 0 10px;
   color: #865DFF;
   text-decoration: none;
   font-size: 20px;
   margin-right: 40px;
 }
-
-.navegacion ul li a:hover {
+header ul li a:hover {
   color: #CCC;
   font-size: 1.2em;
 }
@@ -74,13 +66,11 @@ header {
   margin: 50px auto;
   text-align: center;
 }
-
 .presentacion h1 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 .presentacion p {
   font-size: 18px;
   line-height: 1.5;
@@ -90,21 +80,17 @@ header {
 .comentario {
   padding: 20px;
 }
-
 .comentario h1 {
   font-size: 2em;
   text-align: center;
 }
-
 .comentario p {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
-
 .comentario div {
   margin-bottom: 20px;
 }
-
 .comentario label {
   display: block;
   margin-bottom: 10px;
@@ -138,12 +124,6 @@ button[type=submit]:hover {
 }
 
 /*HISTORIA*/
-.historia h1 {
-  font-size: 24px;
-  margin-top: 0;
-  text-align: center;
-}
-
 .historia {
   margin: 20px;
   padding: 10px;
@@ -153,51 +133,43 @@ button[type=submit]:hover {
   font-size: 16px;
   line-height: 1.5;
 }
-
-/* subtítulos */
-.historia h2,
-.historia h3 {
+.historia h1 {
+  font-size: 24px;
+  margin-top: 0;
+  text-align: center;
+}
+.historia h2, .historia h3 {
   font-size: 20px;
   margin-top: 1em;
   text-align: cente;
 }
-
-/* texto*/
 .historia p {
   margin-top: 0;
   text-align: center;
 }
-
-/*negrita */
 .historia b {
   font-weight: bold;
 }
 
 /*BOCETOS*/
+.bocetos {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+}
 .bocetos h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
-/* Estilo para el párrafo */
 .bocetos p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
-
-/* Estilo para las imágenes */
 .bocetos img {
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
-}
-
-/* Estilo para la sección de bocetos */
-.bocetos {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 2rem;
 }
 
 /*PERSONAJES*/
@@ -209,28 +181,24 @@ button[type=submit]:hover {
   color: #333;
   text-align: center;
 }
-
 .personajes h1 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 }
-
-.personajes h3 {
+.personajes h2 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-
-.personajes h4 {
+.personajes h3 {
   font-size: 20px;
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
 .personajes p {
   font-size: 16px;
   line-height: 1.5;
@@ -245,7 +213,6 @@ button[type=submit]:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-
 .beck:hover {
   width: 250px;
   box-shadow: 0px 0px 15px darkgrey;
@@ -259,7 +226,6 @@ button[type=submit]:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-
 .Amber:hover {
   width: 250px;
   box-shadow: 0px 0px 15px darkgrey;
@@ -273,10 +239,9 @@ button[type=submit]:hover {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-
 .Gaco:hover {
   width: 300px;
-  box-shadow: 0px 0px 15px darkblue;
+  box-shadow: 0px 0px 15px darkgray;
 }
 
 /* FOOTER */
@@ -286,8 +251,7 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
-.redes {
+footer .redes {
   width: 50px;
   height: 50px;
   margin: 10px;
