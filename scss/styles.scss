@@ -29,6 +29,7 @@ header {
     "inicio"
     "nav";
     .Inicio {
+        text-align: center;
         grid-area: inicio;
         width: 200px;
         color: #865DFF;
@@ -47,7 +48,8 @@ header {
     }
 
     .Inicio {
-        align-self: center;
+        width: auto;
+        justify-items: center;
     }
 
     .navegacion {

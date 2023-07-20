@@ -27,6 +27,7 @@ header {
   grid-template-areas: "inicio" "nav";
 }
 header .Inicio {
+  text-align: center;
   grid-area: inicio;
   width: 200px;
   color: #865DFF;
@@ -43,7 +44,8 @@ header .encabezado {
   align-items: center;
 }
 header .Inicio {
-  align-self: center;
+  width: auto;
+  justify-items: center;
 }
 header .navegacion {
   margin-top: 10px;
