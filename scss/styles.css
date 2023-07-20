@@ -8,17 +8,387 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.encabezado {
-  display: grid;
-  background-color: purple;
-}
-.encabezado .Inicio {
-  color: whitesmoke;
-  text-decoration: none;
-}
-.encabezado .navegacion ul li a {
-  color: whitesmoke;
-  text-decoration: none;
+body {
+  /*background-color: rgb(229, 228, 228);*/
+  background-image: url(../img/fondo.jpg);
+  background-attachment: fixed;
+  color: rgb(224, 224, 224);
 }
 
-/*PÁGINA PRINCIPAL*//*# sourceMappingURL=styles.css.map */
+/* HEADER */
+header {
+  display: grid;
+  grid-template-areas: "inicio inicio inicio inicio" "a1 a2 a3 a4";
+  grid-area: header;
+  justify-content: center;
+  background-color: #191825;
+  color: #865DFF;
+  padding: 10px;
+  grid-template-areas: "inicio" "nav";
+}
+header .Inicio {
+  grid-area: inicio;
+  width: 200px;
+  color: #865DFF;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  justify-items: center;
+}
+header .encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .Inicio {
+  align-self: center;
+}
+header .navegacion {
+  margin-top: 10px;
+  text-align: center;
+}
+header .navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .navegacion ul .a1 {
+  grid-area: a1;
+}
+header .navegacion ul .a2 {
+  grid-area: a2;
+}
+header .navegacion ul .a3 {
+  grid-area: a3;
+}
+header .navegacion ul .a4 {
+  grid-area: a4;
+}
+header .navegacion ul li a {
+  margin: 0 10px;
+  color: #865DFF;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 40px;
+  transition: color 0.2s, font-size 0.2s;
+}
+header .navegacion ul li a:hover {
+  color: #CCC;
+  font-size: 35px;
+}
+
+/* INDEX */
+.presentacion {
+  margin: 50px auto;
+  text-align: center;
+}
+.presentacion h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.presentacion p {
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.SobreMi h2 {
+  font-size: 30px;
+}
+.SobreMi p {
+  font-size: 23px;
+}
+
+/*HISTORIA*/
+.historia {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #f0bdff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(231, 135, 255, 0.745);
+  background-color: #564098;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.historia h1 {
+  font-size: 24px;
+  margin-top: 0;
+  text-align: center;
+}
+.historia h2, .historia h3 {
+  font-size: 20px;
+  margin-top: 1em;
+  text-align: center;
+}
+.historia p {
+  margin-top: 0;
+  text-align: center;
+}
+.historia b {
+  font-weight: bold;
+}
+
+/*COMENTA*/
+.comentario {
+  padding: 20px;
+}
+.comentario h1 {
+  font-size: 2em;
+  text-align: center;
+}
+.comentario p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.comentario div {
+  margin-bottom: 20px;
+}
+.comentario label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+input[type=text],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button[type=submit] {
+  background-color: #191825;
+  color: #865DFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+button[type=submit]:hover {
+  background-color: #865DFF;
+  color: #191825;
+}
+
+/*BOCETOS*/
+.bocetos {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  grid-template-areas: "h1 h1" "inicial inicial" "boceto1 c1" "c2 boceto2" "boceto3 c3" "c4 boceto4" "boceto5 c5" "c6 boceto6" "boceto7 c7" "c8 boceto8" "boceto9 c9";
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+}
+.bocetos h1 {
+  grid-area: h1;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.bocetos .inicial {
+  grid-area: inicial;
+}
+.bocetos .boceto1 {
+  grid-area: boceto1;
+}
+.bocetos .c1 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px #f0bdff;
+  border-radius: 0px 10px 10px 0px;
+  grid-area: c1;
+}
+.bocetos .boceto2 {
+  grid-area: boceto2;
+}
+.bocetos .c2 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px whitesmoke;
+  border-radius: 10px 0px 0px 10px;
+  grid-area: c2;
+}
+.bocetos .boceto3 {
+  grid-area: boceto3;
+}
+.bocetos .c3 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px whitesmoke;
+  border-radius: 0px 10px 10px 0px;
+  grid-area: c3;
+}
+.bocetos .boceto4 {
+  grid-area: boceto4;
+}
+.bocetos .c4 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px whitesmoke;
+  border-radius: 10px 0px 0px 10px;
+  grid-area: c4;
+}
+.bocetos .boceto5 {
+  grid-area: boceto5;
+}
+.bocetos .c5 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px #f0bdff;
+  border-radius: 0px 10px 10px 0px;
+  grid-area: c5;
+}
+.bocetos .boceto6 {
+  grid-area: boceto5;
+}
+.bocetos .c6 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px whitesmoke;
+  border-radius: 10px 0px 0px 10px;
+  grid-area: c6;
+}
+.bocetos .bocetogaco {
+  grid-area: boceto7;
+}
+.bocetos .c7 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px #f0bdff;
+  border-radius: 0px 10px 10px 0px;
+  grid-area: c7;
+}
+.bocetos .rediseños {
+  grid-area: boceto8;
+}
+.bocetos .c8 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px whitesmoke;
+  border-radius: 10px 0px 0px 10px;
+  grid-area: c8;
+}
+.bocetos .antagonista {
+  grid-area: boceto9;
+}
+.bocetos .c9 {
+  box-shadow: 0px 0px 20px #f0bdff;
+  background-color: #564098;
+  border: solid 3px #f0bdff;
+  border-radius: 0px 10px 10px 0px;
+  grid-area: c9;
+}
+.bocetos p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.bocetos img {
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  transition: scale 0.5s, box-shadow 0.5s;
+}
+.bocetos img:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 20px rgb(131, 208, 252);
+}
+
+/*PERSONAJES*/
+.personajes {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+.personajes h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.personajes h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.personajes h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.personajes p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.personajes .beck {
+  width: 200px;
+  display: block;
+  max-width: 200%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(95, 196, 255, 0.3);
+  transition: scale 0.2s, box-shadow 0.2s;
+}
+.personajes .beck:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 20px rgb(131, 208, 252);
+}
+.personajes .Amber {
+  width: 200px;
+  display: block;
+  max-width: 200%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(21, 21, 21, 0.3);
+  transition: scale 0.2s, box-shadow 0.2s;
+}
+.personajes .Amber:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 20px rgb(131, 208, 252);
+}
+.personajes .Gaco {
+  width: 250px;
+  display: block;
+  max-width: 200%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(21, 21, 21, 0.3);
+  transition: scale 0.2s, box-shadow 0.2s;
+}
+.personajes .Gaco:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 20px rgb(131, 208, 252);
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  background-color: #191825;
+  color: #865DFF;
+  padding: 10px;
+  text-align: center;
+}
+footer .redes {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}/*# sourceMappingURL=styles.css.map */
