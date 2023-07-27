@@ -170,7 +170,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.2em;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
@@ -205,8 +205,8 @@ button[type="submit"]:hover {
     "boceto3 c3"
     "c4 boceto4"
     "boceto5 c5"
-    "c6 boceto6"
-    "boceto7 c7"
+    "c7 boceto7"
+    "boceto6 c6"
     "c8 boceto8"
     "boceto9 c9";
 margin: 0 auto;
@@ -272,7 +272,7 @@ text-align: center;
         grid-area: c5;
     }
     .boceto6{
-        grid-area: boceto5;
+        grid-area: boceto6;
     }
     .c6{
         box-shadow: 0px 0px 20px #f0bdff;
