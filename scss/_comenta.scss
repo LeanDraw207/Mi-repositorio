@@ -1,5 +1,6 @@
 
 .comentario {
+    justify-content: center;
     padding: 20px;
         h1{
         font-size: 2em;
@@ -17,29 +18,31 @@
         display: block;
         margin-bottom: 10px;
         font-size: 1.2em;
+        margin-left: 30%;
         }
         input[type="text"],
     textarea {
+        
         padding: 10px;
         border: 1px solid #7e56a0;
         border-radius: 5px;
         font-size: 1.2em;
-        width: 50%;
-        margin-left: 200px;
+        width: 700px;
         box-sizing: border-box;
         margin-bottom: 10px;
-        
+        margin-left: 30%;
     }
     }
     
     
     
     button[type="submit"] {
+        margin-left: 48%;
         background-color: #191825;
         color: #865DFF;
         border: none;
-        /*margin: 10px 0px 0px 200px;*/
         padding: 10px;
+        border: 1px solid #865DFF;
         border-radius: 5px;
         font-size: 1.2em;
         cursor: pointer;

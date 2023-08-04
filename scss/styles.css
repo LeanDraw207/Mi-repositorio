@@ -121,16 +121,17 @@ header .navegacion ul li a:hover {
   line-height: 1.5;
 }
 .historia h1 {
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 0;
   text-align: center;
 }
 .historia h2, .historia h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 1em;
   text-align: center;
 }
 .historia p {
+  font-size: 20px;
   margin-top: 0;
   text-align: center;
 }
@@ -171,7 +172,7 @@ header .navegacion ul li a:hover {
   margin-bottom: 20px;
 }
 .personajes .beck {
-  width: 200px;
+  width: 400px;
   display: block;
   max-width: 200%;
   margin: 20px auto;
@@ -184,7 +185,7 @@ header .navegacion ul li a:hover {
   box-shadow: 0px 0px 20px rgb(131, 208, 252);
 }
 .personajes .Amber {
-  width: 200px;
+  width: 400px;
   display: block;
   max-width: 200%;
   margin: 20px auto;
@@ -197,7 +198,7 @@ header .navegacion ul li a:hover {
   box-shadow: 0px 0px 20px rgb(131, 208, 252);
 }
 .personajes .Gaco {
-  width: 250px;
+  width: 450px;
   display: block;
   max-width: 200%;
   margin: 20px auto;
@@ -339,6 +340,7 @@ header .navegacion ul li a:hover {
 
 /*COMENTA*/
 .comentario {
+  justify-content: center;
   padding: 20px;
 }
 .comentario h1 {
@@ -357,6 +359,7 @@ header .navegacion ul li a:hover {
   display: block;
   margin-bottom: 10px;
   font-size: 1.2em;
+  margin-left: 30%;
 }
 .comentario input[type=text],
 .comentario textarea {
@@ -364,18 +367,19 @@ header .navegacion ul li a:hover {
   border: 1px solid #7e56a0;
   border-radius: 5px;
   font-size: 1.2em;
-  width: 50%;
-  margin-left: 200px;
+  width: 700px;
   box-sizing: border-box;
   margin-bottom: 10px;
+  margin-left: 30%;
 }
 
 button[type=submit] {
+  margin-left: 48%;
   background-color: #191825;
   color: #865DFF;
   border: none;
-  /*margin: 10px 0px 0px 200px;*/
   padding: 10px;
+  border: 1px solid #865DFF;
   border-radius: 5px;
   font-size: 1.2em;
   cursor: pointer;
@@ -402,7 +406,8 @@ footer .redes {
 }
 
 /* VISTA MOVIL */
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  /*HEADER*/
   header {
     display: grid;
     grid-template-areas: "inicio inicio inicio inicio" "a1 a2 a3 a4";
@@ -613,5 +618,54 @@ footer .redes {
   .bocetos img:hover {
     scale: 1.1;
     box-shadow: 0px 0px 20px rgb(131, 208, 252);
+  }
+  /*COMENTA*/
+  .comentario {
+    justify-content: center;
+    padding: 20px;
+  }
+  .comentario h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .comentario p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .comentario div {
+    margin-bottom: 20px;
+  }
+  .comentario label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-left: 18%;
+  }
+  .comentario input[type=text], .comentario textarea {
+    padding: 10px;
+    border: 1px solid #b673f0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 18%;
+  }
+  button[type=submit] {
+    margin-left: 40%;
+    background-color: #191825;
+    color: #865DFF;
+    border: none;
+    padding: 10px;
+    border: 1px solid #865DFF;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  button[type=submit]:hover {
+    background-color: #865DFF;
+    color: #191825;
   }
 }/*# sourceMappingURL=styles.css.map */
