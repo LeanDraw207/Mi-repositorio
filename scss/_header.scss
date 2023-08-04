@@ -1,0 +1,72 @@
+header {
+    display: grid;
+    grid-template-areas:
+    "inicio inicio inicio inicio"
+    "a1 a2 a3 a4";
+    grid-area: header;
+    justify-content: center;
+    background-color: #191825;
+    color: #865DFF;
+    padding: 10px;
+    grid-template-areas: 
+    "inicio"
+    "nav";
+    .Inicio {
+        text-align: center;
+        grid-area: inicio;
+        width: 200px;
+        color: #865DFF;
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: bold;
+        justify-items: center;
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Inicio {
+        width: auto;
+        justify-items: center;
+    }
+
+    .navegacion {
+        margin-top: 10px;
+        text-align: center;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            .a1{
+            grid-area: a1;
+            }
+            .a2{
+            grid-area: a2;
+            }
+            .a3{
+            grid-area: a3;
+            }
+            .a4{
+            grid-area: a4;
+            }
+            li a{
+                margin: 0 10px;
+                color: #865DFF;
+                text-decoration: none;
+                font-size: 30px;
+                margin-right: 40px;
+                transition: color 0.2s, font-size 0.2s;
+                &:hover{
+                    color: #CCC;
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
