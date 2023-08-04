@@ -238,7 +238,6 @@ header .navegacion ul li a:hover {
   border: solid 3px whitesmoke;
   border-radius: 0px 10px 10px 0px;
   grid-area: c1;
-  padding: 80px 20px 30px 20px;
 }
 .bocetos .boceto2 {
   grid-area: boceto2;
