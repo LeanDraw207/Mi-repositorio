@@ -1,6 +1,5 @@
 
-@media screen and (min-width: 400px) and (max-width: 700px) {
-
+@media screen and (min-width: 320px) and (max-width: 480px) {
                 /*HEADER*/
 
     header {
@@ -36,6 +35,7 @@
         }
     
         .Inicio {
+            font-size: 40px;
             width: auto;
             justify-items: center;
         }
@@ -61,11 +61,12 @@
                 grid-area: a4;
                 }
                 li a{
+                    border-radius: 5px;
                     margin: 0 10px;
                     color: #865DFF;
                     text-decoration: none;
-                    font-size: 22px;
-                    margin-right: 10px;
+                    font-size: 18px;
+                    margin-right: 3px;
                     transition: color 0.2s, font-size 0.2s;
                     &:hover{
                         color: #CCC;
@@ -75,6 +76,37 @@
             }
         }
     }
+                /*INDEX*/
+.presentacion {
+    width: 280px;
+    height: 220px;
+    text-align: center;
+        h1 {
+            margin: 10px auto;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+}
+
+.SobreMi{
+    width: 300px;
+    height: 350px;
+    margin: 40px auto;
+    text-align: center;
+        h2{
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+        }
+}
+
+
     
     /*BOCETOS*/
 
@@ -114,15 +146,18 @@ justify-content: center;
     margin-bottom: 1rem;
     }
     .inicial{
+        width: 250px;
         grid-area: inicial;
+        justify-self: center;
     }
     .boceto1{
         grid-area: boceto1;
         justify-self: center;
-        width: 300px;
+        width: 250px;
 
     }
     .c1{
+        
         box-shadow: 0px 0px 20px #f0bdff;
         background-color: #564098;
         border: solid 3px whitesmoke;
@@ -133,7 +168,7 @@ justify-content: center;
     .boceto2{
         grid-area: boceto2;
         justify-self: center;
-        width: 300px;
+        width: 250px;
     }
     .c2{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -145,7 +180,7 @@ justify-content: center;
     .boceto3{
         grid-area: boceto3;
         justify-self: center;
-        width: 340px;
+        width: 300px;
     }
     .c3{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -157,7 +192,7 @@ justify-content: center;
     .boceto4{
         grid-area: boceto4;
         justify-self: center;
-        width: 300px;
+        width: 250px;
     }
     .c4{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -169,7 +204,7 @@ justify-content: center;
     .boceto5{
         grid-area: boceto5;
         justify-self: center;
-        width: 300px;
+        width: 250px;
     }
     .c5{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -181,7 +216,7 @@ justify-content: center;
     .boceto6{
         grid-area: boceto6;
         justify-self: center;
-        width: 340px;
+        width: 300px;
     }
     .c6{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -193,7 +228,7 @@ justify-content: center;
     .bocetogaco{
         grid-area: boceto7;
         justify-self: center;
-        width: 300px;
+        width: 250px;
     }
     .c7{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -205,7 +240,7 @@ justify-content: center;
     .rediseños{
         grid-area: boceto8;
         justify-self: center;
-        width: 340px;
+        width: 300px;
     }
     .c8{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -217,7 +252,7 @@ justify-content: center;
     .antagonista{
         grid-area: boceto9;
         justify-self: center;
-        width: 300px;
+        width:250px;
     }
     .c9{
         box-shadow: 0px 0px 20px #f0bdff;
@@ -246,6 +281,78 @@ justify-content: center;
     }
 }                
 
+                /*PERSONAJES*/
+
+.personajes {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        }
+        h3 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        }
+        p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        }
+        .beck {
+        width: 200px;
+        display: block;
+        max-width: 200%;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(95, 196, 255, 0.3);
+        transition: scale 0.2s, box-shadow 0.2s;
+            &:hover{
+            scale: (1.1);
+            box-shadow: $blue-light;}
+        }
+        .Amber {
+        width: 200px;
+        display: block;
+        max-width: 200%;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(21, 21, 21, 0.3);
+        transition: scale 0.2s, box-shadow 0.2s;
+            &:hover {
+            scale: (1.1);
+            box-shadow: 0px 0px 20px  rgb(131, 208, 252);}
+        }
+    
+    .Gaco {
+        width: 250px;
+        display: block;
+        max-width: 200%;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(21, 21, 21, 0.3);
+        transition: scale 0.2s, box-shadow 0.2s;
+            &:hover {
+            scale: (1.1);
+            box-shadow: 0px 0px 20px  rgb(131, 208, 252);}
+        }
+    }
+
                 /*COMENTA*/
 
 .comentario {
@@ -256,7 +363,7 @@ justify-content: center;
         text-align: center;
     }
     p {
-        font-size: 1.2em;
+        font-size: 15px;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -267,7 +374,7 @@ justify-content: center;
         display: block;
         margin-bottom: 10px;
         font-size: 1.2em;
-        margin-left: 18%;
+        margin-left: 6%;
         }
     input[type="text"],textarea {
         padding: 10px;
@@ -277,9 +384,9 @@ justify-content: center;
         width: 250px;
         box-sizing: border-box;
         margin-bottom: 10px;
-        margin-left: 18%;
+        margin-left: 6%;
         }
-}
+    }
 
     button[type="submit"] {
         margin-left: 40%;
